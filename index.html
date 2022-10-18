@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars addition app</title>
+    <link rel="stylesheet" href="./main_style.css">
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <div id="allForms">
+
+        <form action="#" class="carForm">
+
+            <div>
+                <label for="brandName">Brand Name :</label>
+                <input type="text" id="brandName" required>    
+            </div>
+            <br>
+            <div>
+                <label for="carName">Car Name  :</label>
+                <input type="text" id="carName" required="enter data">    
+            </div>
+            <br>
+            <div>
+                <label for="color"> Car Color</label>
+                <input type="text" id="color">    
+            </div>
+            <br>
+            <div>
+                <label for="model">Model</label>
+                <input type="number" id="model">    
+            </div>
+            
+            <br>
+            <button type="button" class="deletebtn" onclick="delMe(event, this)">delete</button>
+            <br>
+            
+        </form>
+
+    </div>
+
+    <br>
+    <button type="button" id="addMore">+</button>
+
+    <button type="submit" id="submitForms">Save All</button>
+
+<section>
+    <div class="wrapper">
+        <table id="cartable">
+            <tr>
+                <th>Brand Name</th>
+                <th>Car Name</th>
+                <th>Color</th>
+                <th>Model</th>
+            </tr>
+        </table>
+    </div>
+</section>
+    
+    <script src="./main.js"/></script>
+    <!-- <script src="./main_paractise.js"></script> -->
+</body>
+</html>
